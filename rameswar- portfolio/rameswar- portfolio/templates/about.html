@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Hero Section -->
+<section class="about-section">
+    <div class="about-container">
+        <div class="about-image fade-in">
+            <img src="{{ url_for('static', filename='profile-photo.jpg') }}" alt="Rameswar Mohapatra - Web Developer" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjNjY3ZWVhIDAlLCAjNzY0YmEyIDEwMCUpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iNjAiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuOSIvPgo8cGF0aCBkPSJNMTQwIDI4MEMxNDAgMjUwIDEyMCAyMzAgMTUwIDIzMEgyNTBDMjgwIDIzMCAyNjAgMjUwIDI2MCAyODBWMzIwSDE0MFYyODBaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjkiLz4KPHRleHQgeD0iMjAwIiB5PSIzNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjAiIGZvbnQtd2VpZ2h0PSI2MDAiPlJhbWVzd2FyIE1vaGFwYXRyYTwvdGV4dD4KPC9zdmc+Cg=='" />
+        </div>
+        <div class="about-content fade-in">
+            <h2>About <span class="logo-accent">Rameswar Mohapatra</span></h2>
+            <p>Hello! I'm Rameswar Mohapatra, a passionate web developer dedicated to creating exceptional digital experiences. With a strong foundation in both frontend and backend technologies, I transform ideas into robust, user-friendly web applications.</p>
+            
+            <p>My journey in web development began with a curiosity for how things work on the internet, which quickly evolved into a deep passion for coding and problem-solving. I believe in writing clean, maintainable code and staying up-to-date with the latest web technologies and best practices.</p>
+            
+            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="services-section">
+    <div class="services-container">
+        <h2 class="fade-in">Technical <span class="logo-accent">Skills</span></h2>
+        <p class="fade-in">I specialize in a wide range of technologies to deliver comprehensive web solutions</p>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive, interactive user interfaces with HTML5, CSS3, JavaScript, and modern frameworks like React and Vue.js.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Building robust server-side applications with Python, Flask, Django, and Node.js, ensuring scalability and security.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Designing and optimizing databases with MySQL, PostgreSQL, MongoDB, and implementing efficient data structures.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Creating mobile-first, responsive designs that work seamlessly across all devices and screen sizes.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <h3>Version Control</h3>
+                <p>Proficient in Git and GitHub for collaborative development, code versioning, and project management.</p>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <p>Optimizing web applications for speed, SEO, and user experience using best practices and modern tools.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Technology Stack -->
+<section class="about-section" style="background: #fff;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h2 class="fade-in">Technology <span class="logo-accent">Stack</span></h2>
+            <p class="fade-in">The tools and technologies I work with to bring ideas to life</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-top: 3rem;">
+            <div class="tech-category fade-in" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 15px;">
+                <h3 style="color: #333; margin-bottom: 1.5rem;">Frontend</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">HTML5</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">CSS3</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">React</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Vue.js</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Bootstrap</span>
+                </div>
+            </div>
+            
+            <div class="tech-category fade-in" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 15px;">
+                <h3 style="color: #333; margin-bottom: 1.5rem;">Backend</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Flask</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Django</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Node.js</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Express</span>
+                </div>
+            </div>
+            
+            <div class="tech-category fade-in" style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 15px;">
+                <h3 style="color: #333; margin-bottom: 1.5rem;">Database & Tools</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">MySQL</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">PostgreSQL</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">MongoDB</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Git</span>
+                    <span style="background: #6366f1; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Docker</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="contact-section" style="padding: 4rem 2rem;">
+    <div class="contact-container">
+        <h2 class="fade-in">Let's Work <span style="color: white;">Together</span></h2>
+        <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9;">Ready to bring your web project to life? I'm here to help you create something amazing.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="{{ url_for('contact') }}" class="btn fade-in" style="background: white; color: #6366f1; text-decoration: none; padding: 1rem 2rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease;">Get In Touch</a>
+            <a href="{{ url_for('project') }}" class="btn fade-in" style="background: rgba(255,255,255,0.1); color: white; text-decoration: none; padding: 1rem 2rem; border-radius: 8px; font-weight: 600; transition: all 0.3s ease; border: 2px solid white;">View Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Decorative Elements -->
+<div class="decorative-blob blob-1"></div>
+<div class="decorative-blob blob-2"></div>
+<div class="decorative-blob blob-3"></div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.timeline-container {
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #6366f1, #764ba2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.tech-category:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.tech-category span {
+    transition: all 0.3s ease;
+}
+
+.tech-category span:hover {
+    background: #5856eb !important;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .timeline-container::before {
+        display: none;
+    }
+    
+    .timeline-item {
+        margin-left: 0;
+    }
+    
+    .timeline-item div:first-child {
+        display: none;
+    }
+    
+    .timeline-item div:last-child {
+        margin-left: 0 !important;
+    }
+}
+</style>
+{% endblock %}

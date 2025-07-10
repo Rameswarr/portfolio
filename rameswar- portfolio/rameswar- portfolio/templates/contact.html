@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="contact-section">
+    <div class="contact-container">
+        <h1 class="fade-in">Get In Touch</h1>
+        <p class="fade-in">Ready to bring your ideas to life? Let's connect and discuss how I can help you build amazing web experiences.</p>
+        
+        <!-- Contact Information Cards -->
+        <div class="contact-info-grid">
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>rameswarmohapatra36@gmail.com</p>
+                <a href="mailto:rameswarmohapatra36@gmail.com" class="contact-link">Send Email</a>
+            </div>
+            
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>+91 7978411202</p>
+                <a href="tel:+917978411202" class="contact-link">Call Now</a>
+            </div>
+            
+            <div class="contact-card fade-in">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p>Brahmapur, Odisha<br>India</p>
+                <a href="https://maps.google.com/?q=Brahmapur,Odisha,India" target="_blank" rel="noopener noreferrer" class="contact-link">View on Map</a>
+            </div>
+        </div>
+        
+        <!-- Social Media Links -->
+        <div class="social-contact-section fade-in">
+            <h2>Connect With Me</h2>
+            <p>Follow me on social media for updates on my latest projects and web development insights.</p>
+            
+            <div class="social-contact-grid">
+                <a href="https://github.com/Rameswarr" target="_blank" rel="noopener noreferrer" class="social-contact-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <p>Check out my repositories and open-source contributions</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/rameswar-mohapatra-0890b836b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="social-contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me professionally and view my experience</p>
+                </a>
+              
+            </div>
+        </div>
+        
+        <!-- Availability Section -->
+        <div class="availability-section fade-in">
+            <h2>Availability</h2>
+            <div class="availability-info">
+                <div class="availability-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Response Time</h4>
+                        <p>I typically respond within 24 hours</p>
+                    </div>
+                </div>
+                
+                
+                <div class="availability-item">
+                    <i class="fas fa-coffee"></i>
+                    <div>
+                        <h4>Coffee Chat</h4>
+                        <p>Always open to discussing new opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div class="cta-section fade-in">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Whether you need a simple website or a complex web application, I'm here to help bring your vision to life.</p>
+            <div class="cta-buttons">
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative Elements -->
+    <div class="decorative-blob blob-1"></div>
+    <div class="decorative-blob blob-2"></div>
+    <div class="decorative-blob blob-3"></div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .contact-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2.5rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .contact-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+    }
+    
+    .contact-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    
+    .contact-card h3 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .contact-card p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .contact-link {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background: white;
+        color: #667eea;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .contact-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-contact-section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    
+    .social-contact-section h2 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .social-contact-section p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .social-contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .social-contact-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+    }
+    
+    .social-contact-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+    }
+    
+    .social-contact-card i {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .social-contact-card h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .social-contact-card p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+    
+    .availability-section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    
+    .availability-section h2 {
+        color: #fff;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    
+    .availability-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .availability-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .availability-item i {
+        font-size: 2rem;
+        color: #fff;
+        min-width: 40px;
+    }
+    
+    .availability-item h4 {
+        color: #fff;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .availability-item p {
+        color: rgba(255, 255, 255, 0.9);
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    
+    .cta-section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    
+    .cta-section h2 {
+        color: #fff;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    
+    .cta-section p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn-primary {
+        background: #fff;
+        color: #667eea;
+    }
+    
+    .btn-secondary {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    
+    .btn-secondary:hover {
+        background: #fff;
+        color: #667eea;
+    }
+    
+    .btn i {
+        margin-right: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-info-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .social-contact-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .availability-info {
+            grid-template-columns: 1fr;
+        }
+        
+        .availability-item {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .btn {
+            width: 200px;
+        }
+    }
+</style>
+{% endblock %}
